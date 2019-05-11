@@ -1,6 +1,8 @@
 
 <?php 
 
+// open in terminal 
+
 // yes or no cheaking variable 
 $action=null; 
 $workingtime=[];
@@ -13,12 +15,12 @@ while($action !== 'n'){
             $open=(int)readline('enter the opening time: ');
             $close=(int)readline('enter the closing time: ');
 
-        // cheacking the end time is biger the starting time
+// cheacking the end time is biger the starting time
                 if($open > $close){
                     echo "the entered time is invalid \ntry again !";
                 }
 
-            //saving the time 
+//saving the time 
             $workingtime[]=[$open, $close];
 
         }
@@ -32,7 +34,7 @@ while($action !== 'n'){
     echo "******************************************\n\n\n";
 
 
-    //asking at what time he wants to go to shop?
+//asking at what time he wants to go to shop?
 
     $going=(int)readline("what time do you want to go at shop? =>");
     $is_open=false;
@@ -43,7 +45,7 @@ while($action !== 'n'){
         }
     }
     
-    // if the shop is not open show this message 
+// if the shop is not open show this message 
     if($is_open !=true ){
         echo "\n\nthe shop is close !\n\n";
     }
@@ -55,7 +57,7 @@ while($action !== 'n'){
         echo '- our shop is open between '. $work[0]. ' and '. $work[1]. "\n";
     };
     echo "******************************************\n";
-    
+
 //  end
 
 
