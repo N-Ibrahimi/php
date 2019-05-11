@@ -43,17 +43,21 @@ while($action !== 'n'){
         }
     }
     
+    // if the shop is not open show this message 
     if($is_open !=true ){
         echo "\n\nthe shop is close !\n\n";
     }
 
 
-
+// general inforamation about working times
     echo "******************************************\n";
     foreach($workingtime as $work){
         echo '- our shop is open between '. $work[0]. ' and '. $work[1]. "\n";
     };
     echo "******************************************\n";
+    
+//  end
+
 
 ?>
 
