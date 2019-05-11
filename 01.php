@@ -53,9 +53,14 @@ while($action !== 'n'){
 
 // general inforamation about working times
     echo "******************************************\n";
-    foreach($workingtime as $work){
-        echo '- our shop is open between '. $work[0]. ' and '. $work[1]. "\n";
-    };
+    echo "Our shop is open between \n";
+    foreach($workingtime as $k => $work){
+        echo '- '. $work[0]. ' and '. $work[1] ;
+        if($k>0){
+            echo " and ";
+        } 
+              
+     };
     echo "******************************************\n";
 
 //  end
